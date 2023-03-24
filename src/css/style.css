@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea{
+    font-family: 'Oswald', sans-serif;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    height: 75px;
+    background-color: #24262a;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+}
+
+header .container{
+    display:flex;
+    align-items:center;
+}
+
+header .navbar{
+    display: flex;
+}
+
+header .navbar li {
+    padding:0 15px;
+    list-style:none;
+}
+
+header .navbar li a{
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+header .container button{
+    position: absolute;
+    right: 0;
+    border:none;
+    background-color: #00ffe5;
+    color: #000;
+    font-weight: 600;
+    height: 75px;
+    text-transform: uppercase;
+    padding: 0 15px;
+    font-size:18px
+}
+
+#banner .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 800px;
+}
+
+#banner video{
+    position: absolute;
+    z-index: -1000; background-image: url(https://static-dm.ubisoft.com/siege/prod/7907369fa863844fc1ae432a9ca0e610.jpg);
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+}
+
+#banner .card-info{
+    color: #24262a;
+    width: 420px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    margin: 100px;
+}
+
+#banner .card-info h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+#banner .ad{
+    background-image: url(../img/r6-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 340px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner .ad h2{
+    color: #24262a;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+}
+
+section button,
+footer button{
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: #2499ff;
+    border:none;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+section button:hover{
+    background-color: #0081f1;
+}
+
+#banner .card-info button{
+    font-size: 19px;
+    margin-top: 15px;
+}
+
+#news {
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 110vh;
+}
+
+#news .container{
+    display: flex;
+}
+
+#news h2{
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    padding: 60px;
+}
+
+#news .new-season{
+    width: 50%;
+}
+#news .new-season img{
+    width: 95%;
+}
+
+#news .new-season .new-season-info{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    position: relative;
+    top: -5px;
+    width: 95%;
+}
+
+#news .new-season .new-season-info h3{
+    font-size:22px;
+    font-weight: lighter;
+}
+
+#news .new-season .new-season-info p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #24262a;
+    font-size:18px;
+    font-weight: lighter;
+}
+
+#news .last-news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+#news .last-news img{
+    width: 40%;
+}
+
+.last-news .card-content-last-news{
+    display: flex;
+    margin-bottom: 55px;
+}
+
+.last-news-info{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.6);
+    gap: 10px;
+    padding: 20px;
+}
+
+.last-news-info button{
+    font-size: 17px;
+    width: 120px;
+    padding: 10px;
+}
+
+#new-operator h2{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-bottom: -15px;
+}
+
+#new-operator{
+    background-image: url(../img/background-brava.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: calc(100vh - 75px);
+}
+
+#new-operator button{
+    position: absolute;
+    padding: 15px 30px;
+    font-size: 27px;
+    margin-bottom: 60px;
+}
+
+footer{
+    background-color: #101114;
+    color: #FFFFFF;
+}
+
+footer .container{
+    display: flex;
+    padding: 30px 0;
+}
+
+footer .footer-form{
+    width: 30%;
+    font-size: 20px;
+    border-right: 1px solid #666;
+}
+
+footer .footer-form input,
+footer .footer-form textarea,
+footer .footer-form button{
+    font-size: 20px;
+    display: block;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+footer .footer-form input:focus,
+footer .footer-form textarea:focus{
+    outline-color: none;
+    outline: none;
+}
+
+footer .footer-form button{
+    color: #ffffff;
+}
+
+footer .footer-form button:hover{
+    background-color: #0081f1;
+}
+
+
+footer .area-copy{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .area-copy a{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+footer .area-copy a:hover{
+    filter: invert(0.2);
+}
+
+footer .area-copy img{
+    height: 45px;
+    filter: invert(1);
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+footer .area-copy p{
+    margin-top: 20px;
+}
