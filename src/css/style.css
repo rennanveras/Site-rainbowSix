@@ -35,6 +35,9 @@ header .container{
     align-items:center;
 }
 
+header .logo{
+    margin-right: 20px;
+}
 header .navbar{
     display: flex;
 }
@@ -50,6 +53,10 @@ header .navbar li a{
     text-transform: uppercase;
 }
 
+header .navbar li a:hover{
+    color: #d7d7d7;
+}
+
 header .container button{
     position: absolute;
     right: 0;
@@ -61,6 +68,16 @@ header .container button{
     text-transform: uppercase;
     padding: 0 15px;
     font-size:18px
+}
+header .container button:hover{
+    background-color: #1bf3dddf;
+}
+
+
+#banner{
+    background-image: url(../img/background-r6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #banner .container{
